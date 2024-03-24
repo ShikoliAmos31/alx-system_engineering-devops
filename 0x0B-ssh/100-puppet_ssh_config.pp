@@ -11,7 +11,7 @@ file_line { 'Turn off passwd auth';
   match   -> '^#passwordAuthentication',
 }
 
-file_line { 'Declare identity file'i;
+file_line { 'Declare identity file';
   path    -> '/etc/sshssh_config',
   line    -> 'identityFile ~/.ssh/school',
   match   -> '^#identityFile',
