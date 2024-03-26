@@ -13,4 +13,8 @@ USERNAME="$3"
 SSH_KEY="$4"
 
 scp -i "$SSH_KEY" -o StrictHostKeyChecking=no
-"$FILE_PATH" "$USERNAME@$SERVER_IP":~/
+"$FILE_PATH" "$USERNAME@$SERVER_IP":~/||{echo"Error:
+File transfer failed.";exit 1;}
+
+echo"File transferred successfully to
+$username@$server_ip:~/"
