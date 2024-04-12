@@ -1,0 +1,46 @@
+              What happens when you type https://www.google.com into your browser and hit Enter?
+
+when typing URL like https://www.google.com into your browser and hit Enter,
+have you ever wondered what happens behind the scenes?
+The journey of a web request traverses through several intricate layers of the internet stack,
+each playing a crucial role in delivering the content to your screen seamlessly.  
+
+                   components involved in fulfilling a web request
+
+               1. DNS Request
+The journey begins with the Domain Name System (DNS) resolution. When you enter a URL, such as www.google.com,
+your browser sends a DNS request to resolve the domain name to an IP address. This query traverses through a series
+of DNS servers until it reaches the authoritative DNS server responsible for the domain.
+            
+              2. TCP/IP
+When the IP address is obtained, the browser initiates a Transmission Control Protocol (TCP) connection to the server hosting the website.
+TCP ensures reliable, ordered, and error-checked delivery of data between devices over a network.
+
+             3. Firewall
+Before the TCP connection is established, it encounters firewalls along the way. That acts as barriers, blocking out potentially malicious requests
+and ensuring that only legitimate requests reach the intended destination.
+
+            4. HTTPS/SSL
+Most websites utilize HTTPS (Hypertext Transfer Protocol Secure) to encrypt data transmission between the browser
+and the server. This encryption is facilitated by SSL (Secure Sockets Layer) or its successor TLS (Transport Layer Security), they safeguard sensitive information
+from eavesdropping and tampering.
+
+          5. Load-Balancer
+High-traffic websites often employ load balancers to distribute incoming requests across multiple servers, ensuring optimal performance and preventing any
+single server from becoming overwhelmed. Load balancers enhance scalability, fault tolerance, and reliability of web services.
+
+         6. Web Server
+Once the request reaches the designated web server, the HTTP request is processed. The web server, such as Apache or Nginx, retrieves the requested resources,
+such as HTML, CSS, JavaScript, and images, and prepares them for delivery to the client.
+
+         7. Application Server
+For dynamic content generation or complex business logic, the web server may communicate with an application server, such as Node.js, Django,
+or Ruby on Rails. The application server executes code, interacts with databases, and generates dynamic content based on the request.
+
+        8. Database
+In the case where data retrieval or manipulation is required, the application server interacts with the database management system (DBMS),
+such as MySQL, PostgreSQL, or MongoDB, that stores and retrieves structured data, enabling applications to provide personalized
+and data-driven experiences to users.
+
+To conclude from the initial DNS resolution to the final delivery of content, the journey of a web request encompasses a sophisticated
+interplay of various technologies and components.
